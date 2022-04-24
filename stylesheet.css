@@ -32,7 +32,7 @@
         position: fixed;
         top: 0;
         width: 48vw;
-        margin: 12vw 24vw 2vw 24vw;
+        margin: 8vw 24vw 2vw 24vw;
         padding: 2vw;
         font-family: 'Poppins', sans-serif;
         font-weight: 600;
@@ -52,7 +52,7 @@
     #grid {
         margin: 0;
         position: fixed;
-        top: 55%;
+        top: 50%;
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);
         justify-content: center;
