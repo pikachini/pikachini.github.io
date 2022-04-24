@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@media screen and (max-device-aspect-ratio: 1/1) {
+    a {
+        text-decoration: none;
+    }
+    
+    h1 {
+        color: white;
+        font-size: 2rem;
+        font-weight: 600 !important;
+        cursor: default;
+    }
+    
+    
+    .disabled {
+        cursor: not-allowed;
+        opacity: 0.3 !important;
+    }
+    
+    body {
+        padding: 0;
+        width: 100%;
+        margin: 0;
+        background: black;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .footer {
+        z-index: 100;
+        position: fixed;
+        top: 0;
+        width: 48vw;
+        margin: 12vw 24vw 2vw 24vw;
+        padding: 2vw;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 1.25rem;
+        text-align: center;
+        color: rgba(152, 152, 152, 0.8);
+        cursor: default;
+        background-color: rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        border-style: solid;
+        border-width: 0.1rem;
+        border-color: rgba(255, 255, 255, 0.1);
+        border-radius: 1rem;
+        backdrop-filter: blur(96px);
+    }
+    
+    #grid {
+        margin: 0;
+        position: fixed;
+        top: 55%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        justify-content: center;
+        flex-direction: column;
+        margin: 0rem;
+        display: flex;
+        text-align: center;
+        width: 50vw;
+        height: 75vh;
+        z-index: 10;
+    }
+    
+    #grid a {
+        -webkit-tap-highlight-color: transparent !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.2s;
+        color: white;
+        text-align: center;
+        width: auto;
+        height: 15vh;
+        padding: 2rem;
+        margin: 1vh;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 2rem;
+        opacity: 1;
+        border-style: solid;
+        border-width: 0.1rem;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-color: rgba(255, 255, 255, 0.2);
+        border-radius: 1.5rem;
+        transform: scale(1);
+    }
+    
+    #grid a:active {
+        opacity: 1;
+        background-color: rgba(255, 255, 255, 0.4);
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        border-style: solid;
+        border-width: 0.05rem;
+        border-color: rgba(255, 255, 255, 0.1);
+        transform: scale(0.95);
+}
+}
+
+@media screen and (min-device-aspect-ratio: 1/1) {
+
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    color: white;
+    font-size: 2rem;
+    font-weight: 600 !important;
+    cursor: default;
+}
+
+
+.disabled {
+    cursor: not-allowed;
+    opacity: 0.3 !important;
+}
+
+body {
+    padding: 0;
+    width: 100%;
+    margin: 0;
+    background: black;
+    display: flex;
+    justify-content: center;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 96vw;
+    margin: 2vw;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 0.75rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    cursor: default;
+}
+
+#grid {
+    margin: 0;
+    position: fixed;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    justify-content: center;
+    flex-direction: row;
+    margin: 0rem;
+    display: flex;
+    text-align: center;
+    width: 100vh;
+    height: 50vh;
+    height: auto;
+    z-index: 10;
+}
+
+#grid a {
+    -webkit-tap-highlight-color: transparent !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+    color: white;
+    text-align: center;
+    width: 20vh;
+    height: 20vh;
+    padding: 1rem;
+    margin: 1vh;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    opacity: 0.5;
+    border-style: solid;
+    border-width: 0.05rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0);
+    border-radius: 0.4rem;
+    -webkit-tap-highlight-color: transparent !important;
+}
+
+#grid a:hover {
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-style: solid;
+    border-width: 0.05rem;
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+}
