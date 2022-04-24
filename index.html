@@ -1,12 +1,46 @@
 <!DOCTYPE html>
 <head>
   <meta charset='utf-8'>
-  <title>Home</title>
+  <title>Portfolio - J R Baldassarre</title>
   <link href='favicon.png' rel='shortcut icon' type='image/x-icon'>
-  <link rel="stylesheet" media="screen" href="stylesheet.css" />
+  <link rel="stylesheet" media="screen" href="stylesheets/portfolio.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <meta charset='utf-8'>
 </head>
+
 <body>
-<a href="/portfolio">Portfolio</a>
+    <container id="header">
+        <a href="../">Home</a>
+        <a href="" id="headsel">Portfolio</a>
+        <a href="experience">Experience</a>
+        <a href="contact">Contact</a>
+    </container>
+
+    <container id="content">
+        <div class="main-content">
+            <h1><span class="role subheader">Featured<br></span>Dead Girls Don't Fear The Reaper<span class="role"> - 2nd AC</span></h1>
+            <img onclick="window.location = '';" src="images/dgheader.jpg">
+        </div>
+        <h1><span class="role subheader" style="position: relative; display: flex; flex-direction: column; width: auto;"><br>Most recent</span></h1>
+        <div class="sub-content">
+            <div class="thumbnail" onclick="window.location = '';">
+                <h2 class="thumbtext"><span class="role">2nd AC</span><br>Dead Girls Don't Fear The Reaper</h2>
+                <div class="blur"></div>
+                <img class="thumbpic" src="images/dg1.jpg">
+            </div>
+            <div class="thumbnail" onclick="window.location = 'https://youtu.be/g9dxQ0f41fU';">
+                <h2 class="thumbtext"><span class="role">Filmed & edited</span><br><span class="role material-icons md-18"><span class="material-icons-outlined">open_in_new</span></span><br>12/03/2022<br>Jamming Out</h2>
+                <div class="blur"></div>
+                <img class="thumbpic" src="images/jo.png">
+            </div>
+            <div class="thumbnail" onclick="window.location = '';">
+                <h2 class="thumbtext">Project</h2>
+                <div class="blur"></div>
+                <img class="thumbpic" src="images/3.jpg">
+            </div>
+        </div>
+
+        <div class="footer">COPYRIGHT © 2022 J R BALDASSARRE</div>
+    </container>
 </body>
 </html>
