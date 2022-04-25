@@ -150,6 +150,7 @@
         cursor: url(../assets/cselect.svg), auto;
         font-weight: 400;
         opacity: 0.25;
+        text-align: right;
     }
     
     img {
