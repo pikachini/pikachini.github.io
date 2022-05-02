@@ -127,7 +127,7 @@
         align-items: center;
         
         width: 100%;
-        margin-top: 24vw;
+        margin: 24vw 0vw;
         padding: 0;
     }
     
@@ -176,7 +176,7 @@
     .item {
         -webkit-tap-highlight-color: transparent !important;
         cursor: url(../assets/cselect.svg), auto;
-        width: 80vw;
+        width: 90vw;
         display: flex;
         flex-direction: row;
         align-items: center;
