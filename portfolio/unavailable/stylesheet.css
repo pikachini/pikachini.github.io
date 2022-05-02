@@ -197,7 +197,7 @@ h1 {
     font-weight: 600 !important;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
-    cursor: url(../../../assets/cdefault.svg), auto;
+    cursor: url(../assets/cdefault.svg), auto;
 }
 
 p {
