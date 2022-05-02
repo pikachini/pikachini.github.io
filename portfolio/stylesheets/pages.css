@@ -155,9 +155,8 @@
     
     img {
         cursor: url(../assets/cselect.svg), auto;
-        width: 5rem;
-        height: 5rem;
-        image-rendering: pixelated;
+        width: 90vw;
+        border-radius: 1.5rem;
     }
     
     .heading {
@@ -187,8 +186,6 @@
         border-color: rgba(255, 255, 255, 0.2);
         border-radius: 1.5rem;
         transform: scale(1);
-        height: 10rem;
-        padding: 1rem;
         margin-bottom: 2rem;
         transition: 0.2s;
     }
@@ -395,7 +392,6 @@ span {
 }
 
 .item {
-    cursor: url(../assets/cselect.svg), auto;
     width: 40vw;
     display: flex;
     flex-direction: row;
@@ -407,10 +403,14 @@ span {
     border-color: rgba(255, 255, 255, 0.2);
     border-radius: 0.4rem;
     transform: scale(1);
-    height: 5rem;
-    padding: 1rem;
     margin-bottom: 2rem;
     transition: 0.2s;
+}
+
+.item img{
+    cursor: url(../assets/cselect.svg), auto !important;
+    width: 40vw;
+    border-radius: 0.4rem;
 }
 
 .item:hover {
