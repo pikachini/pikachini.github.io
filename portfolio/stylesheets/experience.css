@@ -70,6 +70,7 @@
         border-color: rgba(255, 255, 255, 0.1);
         border-radius: 1rem;
         backdrop-filter: blur(96px);
+        -webkit-backdrop-filter: blur(96px);
     }
     
     #header {
@@ -84,6 +85,7 @@
         z-index: 10;
         background-color: rgba(0, 0, 0, 0.2);
         backdrop-filter: blur(96px);
+        -webkit-backdrop-filter: blur(96px);
     }
     
     #header a {
@@ -310,6 +312,7 @@ body {
     z-index: 10;
     background-color: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(96px);
+    -webkit-backdrop-filter: blur(96px);
 }
 
 #header a {
