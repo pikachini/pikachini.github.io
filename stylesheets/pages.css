@@ -26,7 +26,6 @@
     }
     
     p {
-        cursor: url(../assets/cselect.svg), auto;
         color: #fff;
         font-family: 'Poppins', sans-serif;
         font-weight: 600;
@@ -35,20 +34,17 @@
     }
     
     span {
-        cursor: url(../assets/cselect.svg), auto;
         font-weight: 600;
         opacity: 0.5;
     }
     
     .date {
-        cursor: url(../assets/cselect.svg), auto;
         font-weight: 400;
         opacity: 0.25;
         text-align: right;
     }
     
     img {
-        cursor: url(../assets/cselect.svg), auto;
         width: 90vw;
         border-radius: 1.5rem;
     }
@@ -68,7 +64,6 @@
 
     .item {
         -webkit-tap-highlight-color: transparent !important;
-        cursor: url(../assets/cselect.svg), auto;
         width: 90vw;
         display: flex;
         flex-direction: row;
@@ -129,7 +124,6 @@ body {
 }
 
 p {
-    cursor: url(../assets/cselect.svg), auto !important;
     color: #fff;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
@@ -138,19 +132,16 @@ p {
 }
 
 span {
-    cursor: url(../assets/cselect.svg), auto !important;
     font-weight: 600;
     opacity: 0.5;
 }
 
 .date {
-    cursor: url(../assets/cselect.svg), auto !important;
     font-weight: 400;
     opacity: 0.25;
 }
 
 .heading {
-    cursor: url(../assets/cdefault.svg), auto !important;
     background-color: rgba(255, 255, 255, 0) !important;
     border-color: rgba(255, 255, 255, 0) !important;
 }
