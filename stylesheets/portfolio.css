@@ -52,7 +52,7 @@
     }
 
     .heading .title {
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
 
     .heading:active {
@@ -120,7 +120,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        
         width: 100%;
         margin-top: 8rem;
         padding: 0;
@@ -150,7 +149,7 @@
     }
 
     .heading .title {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     .heading:active {
