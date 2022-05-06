@@ -240,6 +240,7 @@ object {
     object{
         cursor: url(../assets/cselect.svg) 16 16, auto !important;
         width: 18px;
+        height: 18px;
         margin: 0px -18px 0px 0px;
         opacity: 0;
         transition: 0.5s;
