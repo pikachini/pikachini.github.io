@@ -78,8 +78,8 @@ object {
         position: fixed;
         top: 0;
         width: 48vw;
-        margin: 8vw 24vw 2vw 24vw;
-        padding: 2vw;
+        margin: 64px 0px;
+        padding: 32px;
         font-family: 'Poppins', sans-serif;
         font-weight: 600;
         font-size: 1.25rem;
