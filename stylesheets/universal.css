@@ -17,7 +17,9 @@
     cursor: url(../assets/ctext.svg) 16 16, auto;
 }
 
-
+object {
+    pointer-events: none;
+}
 
 .noSelect {
     -webkit-tap-highlight-color: transparent !important;
@@ -98,23 +100,27 @@
         perspective: 1000;
         transform: translate3d(0,0,0);
         transform: translateZ(0);
-
         bottom: 0;
-        justify-content: center;
+        justify-content: space-evenly;
         grid-template-columns: repeat(auto-fit, minmax(40vw, 1fr));
-        margin: 5vw;
-        display: grid;
+        margin: 0 2vw 2vw 2vw;
+        padding: 32px 0px;
+        display: flex;
         text-align: center;
         position: fixed;
-        width: 90vw;
-        border-radius: 32px;
+        width: 96vw;
+        border-radius: 64px;
         height: auto;
         z-index: 10;
-        background-color: rgba(255, 255, 255, 0.1);
+        background-color: rgba(33, 33, 33, 0.8);
         backdrop-filter: blur(64px);
         -webkit-backdrop-filter: blur(64px);
     }
     
+    #header span {
+        display: none;
+    }
+
     #header a {
         display: flex;
         flex-direction: row;
@@ -123,31 +129,36 @@
         transition: 0.2s;
         color: rgba(255, 255, 255, 0.8);
         text-align: center;
-        width: 35vw;
+        width: 96px;
         padding: 2.5vw;
-        margin: 2.5vw;
-        height: 128px;
+        margin: 0px 32px;
+        height: 96px;
         font-family: 'Poppins', sans-serif;
         font-weight: 600;
         font-size: 2rem;
         border-style: solid;
-        border-width: 0.1rem;
+        border-width: 1px;
         border-color: rgba(255, 255, 255, 0);
-        background-color: rgba(0, 0, 0, 0.2);
-        border-radius: 16px;
+        background-color: rgba(0, 0, 0, 0);
+        border-radius: 999px;
+        transform: scale(1);
+    }
+
+    object{
+        width: 72px;
+        transform: scale(0.75);
+        transition: 0.5s;
+        transition-timing-function: cubic-bezier(0.000, 0.025, 0.000, 1.005);
     }
     
     #header a:active {
         opacity: 1;
-        background-color: rgba(255, 255, 255, 0.2);
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-        border-style: solid;
-        border-width: 0.1rem;
-        border-color: rgba(255, 255, 255, 0.1);
+        background-color: rgba(0, 0, 0, 0.8) !important;
+        transform: scale(1.1);
     }
     
     #headsel {
-        background-color: rgba(0, 0, 0, 0.4) !important;
+        background-color: rgba(0, 0, 0, 0.2) !important;
         color: rgba(255, 255, 255, 1);
     }
     
@@ -193,6 +204,12 @@
         backdrop-filter: blur(24px);
         -webkit-backdrop-filter: blur(24px);
         border-radius: 28px;
+        transform: scale(0.98);
+        transition: 0.5s;
+    }
+
+    #header:hover {
+        transform: scale(1);
     }
 
     #header a {
@@ -201,6 +218,7 @@
         justify-content: center;
         align-items: center;
         transition: 0.2s;
+        transition-timing-function: cubic-bezier(0.000, 0.025, 0.000, 1.005);
         color: rgba(255, 255, 255, 0.8);
         text-align: center;
         width: 8rem;
@@ -211,20 +229,46 @@
         font-size: 0.8rem;
         opacity: 1;
         border-style: solid;
-        border-width: 0.05rem;
+        border-width: 1px;
         border-color: rgba(255, 255, 255, 0);
         border-radius: 16px;
         -webkit-tap-highlight-color: transparent !important;
         background-color: rgba(0, 0, 0, 0.2);
+        transform: scale(1);
+    }
+
+    object{
+        cursor: url(../assets/cselect.svg) 16 16, auto !important;
+        width: 18px;
+        margin: 0px -18px 0px 0px;
+        opacity: 0;
+        transition: 0.5s;
+        transition-timing-function: cubic-bezier(0.000, 0.025, 0.000, 1.005);
+        transform: rotate(90deg) scale(0.75);
     }
 
     #header a:hover {
         opacity: 1;
-        color: black;
-        background-color: rgba(255, 255, 255, 0.8);
+        color: rgba(255, 255, 255, 1);
+        background-color: rgba(0, 0, 0, 0.8);
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
         border-style: solid;
         border-color: rgba(255, 255, 255, 0.1);
+    }
+
+    #header a:active {
+        transform: scale(0.95);
+    }
+
+    #header span {
+        padding: 0;
+        margin: 0;
+    }
+
+    #header a:hover > object {
+        transform: rotate(0deg) scale(1);
+        margin: 0px 12px 0px 0px;
+        opacity: 1;
     }
 
     #headsel {
@@ -232,7 +276,13 @@
         background-color: rgba(0, 0, 0, 0.4) !important;
     }
 
+    #headsel object {
+        transform: rotate(0deg) scale(1);
+        margin: 0px 12px 0px 0px;
+        opacity: 1;
+    }
+
     #headsel:hover {
-        background-color: rgba(255, 255, 255, 0.8) !important;
+        background-color: rgba(0, 0, 0, 0.8) !important;
     }
 }
