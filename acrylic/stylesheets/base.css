@@ -296,6 +296,8 @@ img {
             font-size: 24pt;
         }
 
+        .tag::after {font-size: 24pt; }
+
         img {
             height: 42.6667vh;
             border-radius: 30px;
