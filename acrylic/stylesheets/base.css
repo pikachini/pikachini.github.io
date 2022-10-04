@@ -3,12 +3,21 @@
     shape-rendering: crispEdges;
 }
 
+a {
+    color:#f2edcc;
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: url(../assets/cselect.svg) 16 16, auto;
+}
+
 body {
-    
+    margin: 0;
 }
 
 #center {
-    width: 100%; margin: -8px;
+    width: 100%;
     display: flex; justify-content: center; align-items: center; height: 100%; position: fixed;
 }
 
@@ -29,7 +38,7 @@ nav {
 
 ul {width: 142.4vh;}
 
-li a {width:142.4vh; text-decoration : none; color : rgba(31, 30, 30, 0.5); transition: .5s ease;user-select: none; font-size: small;}
+li a {width:142.4vh; text-decoration : none; color : rgba(31, 30, 30, 0.5); transition: .5s ease;user-select: none; font-size: medium;}
 
 li a:hover {text-decoration: underline; cursor: url(../assets/cselect.svg) 16 16, auto;}
 
@@ -78,7 +87,7 @@ transition: 0.5s ease;
 
 #touch {position: absolute; opacity: 0; height: 0px;}  
 
-#touch:checked ~ .slide {max-height: 250px; padding: 18px 0px 18px 32px; background-color: rgba(31, 30, 30, 0.5);}
+#touch:checked ~ .slide {max-height: 280px; padding: 18px 0px 18px 32px; background-color: rgba(31, 30, 30, 0.5);}
 
 #touch:checked ~ .slide li a {color:#f2edcc;}
 
@@ -94,6 +103,16 @@ transition: 0.5s ease;
     content: "    ↓";
 }
 
+.bodytext {
+    font-size: medium;
+    color:#f2edcc;
+    padding-left: 32px;
+}
+
+.bodytext a{
+    text-decoration: underline;
+}
+
 #content {
     display: flex;
     align-items:flex-start;
@@ -103,6 +122,10 @@ transition: 0.5s ease;
     background-color: transparent;
     z-index: 2;
     overflow-x: scroll;
+}
+
+#textbox {
+    flex-direction: column;
 }
 
 #carousel {
@@ -173,8 +196,19 @@ img {
     width: 24vh;
 }
 
+#title {
+    margin:0 auto;
+    padding: 12px 0px;
+    font-size: small;
+    position: fixed;
+    top: 0;
+    color: #f2edcc;
+    text-align: center;
+    width: 100%;
+}
+
 #footer {
-    padding: 12px;
+    padding: 12px 0px;
     font-size: small;
     position: fixed;
     bottom: 0;
@@ -270,8 +304,16 @@ img {
             margin: 0;
         }
 
-        #footer {
+        #title {
+            font-size: 18pt;
+        }
+
+        .bodytext {
             font-size: 24pt;
+        }
+
+        #footer {
+            font-size: 18pt;
         }
 } /* styles for smartphones and tablets in portrait mode */
 
