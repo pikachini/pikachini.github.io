@@ -290,6 +290,7 @@ img {
         
         .header {
             font-size: 24pt;
+            padding-left: 64px;
         }
 
         .tag {
@@ -297,6 +298,10 @@ img {
         }
 
         .tag::after {font-size: 24pt; }
+
+        #carousel {
+            padding: 0px 32px;
+        }
 
         img {
             height: 42.6667vh;
@@ -312,6 +317,7 @@ img {
 
         .bodytext {
             font-size: 24pt;
+            padding-left: 128px;
         }
 
         #footer {
