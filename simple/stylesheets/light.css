@@ -1,3 +1,7 @@
 :root {
+    --text: #000;
     --background:#FFFCEA;
+    --button: #F9F4DA;
+    --button-pressed: #DBD7BE;
+    --button-outline: #000;
 }

@@ -25,12 +25,21 @@ body {
 
 .title:hover::after {
     cursor: url(../assets/cursor.svg) 16 16, auto;
-    color: #000;
+    color: var(--text);
     content: 'joshua_raffaele_baldassarre';
     font-weight: 100;
 }
 
+#desktop {
+    display: inline-block;
+}
+
+#mobile {
+    display: none;
+}
+
 ul {
+    list-style: none;
 }
 
 li {
@@ -38,10 +47,15 @@ li {
 }
 
 li::marker {
-    content: url(../assets/list.svg);
+    content: url(../assets/noclicklist.svg);
 }
+
+.list::marker {
+    content: url(../assets/list.svg) !important;
+}
+
 a {
-    color:#000;
+    color: var(--text);
     text-decoration: none;
 }
 
@@ -53,10 +67,10 @@ a:hover {
 button {
     font-family: 'Inconsolata', monospace;
     padding: 8px 16px;
-    background-color: #F9F4DA;
+    background-color: var(--button);
     border-style: solid;
     border-width: 1px;
-    border-color: #000;
+    border-color: var(--button-outline);
     border-radius: 2px;
 }
 
@@ -66,7 +80,7 @@ button:hover {
 }
 
 button:active {
-    background-color: #DBD7BE;
+    background-color: var(--button-pressed);
 }
 
 .footer {
@@ -74,7 +88,7 @@ button:active {
 }
 
 .footer::marker {
-    content: url(../assets/copyright.svg);
+    content: url(../assets/copyright.svg) !important;
 }
 
 @media screen and (max-aspect-ratio: 3/2) /*3:2*/ {
@@ -86,19 +100,66 @@ button:active {
 }
 
 @media screen and (max-aspect-ratio: 9/15) /*portrait*/ {
+
+}
+
+@media only screen  and (max-device-width: 1000px) and (orientation: portrait) {
+
+    body {
+        height: 100vh;
+        justify-content: space-evenly;
+    }
+
+    .title {
+        font-size: 2rem
+    }
+
     .title:hover span {
         display: none;
     }
     
-    .title:active::after {
+    .title:hover::after {
         cursor: url(../assets/cursor.svg) 16 16, auto;
-        color: #000;
         content: 'joshua_raffaele_baldassarre';
         font-weight: 100;
     }
-}
 
-@media only screen  and (max-device-width: 1000px) and (orientation: portrait) {
+    #desktop {
+        display: none;
+    }
+
+    #mobile {
+        display: inline;
+    }
+
+    ul {
+        text-align: center;
+    }
+
+    li::marker {
+        content: none;
+    }
+
+    .list::marker {
+        content: none !important;
+    }
+
+    li {
+        font-size: 2rem;
+        margin: 64px 0px;
+    }
+
+    button {
+        padding: 32px 64px;
+        min-width: 50vw;
+        font-size: 2rem;
+        border-radius: 8px;
+        border-width: 2px;
+    }
+
+    .footer {
+        font-size: 1rem;
+    }
 
 } /* styles for smartphones and tablets in portrait mode */
 
