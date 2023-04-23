@@ -1,3 +1,6 @@
+@import url('light.css') screen and (prefers-color-scheme: light);
+@import url('dark.css') screen and (prefers-color-scheme: dark);
+
 body {
     margin: 0;
     background-color: var(--background);
@@ -11,12 +14,13 @@ body {
 }
 
 * {
-    cursor: url(../assets/cursor.svg) 16 16, auto;
+    cursor: var(--cursor);
     shape-rendering: crispEdges;
 }
 
 .title {
     padding: 36px;
+    color: var(--text);
 }
 
 .title:hover span {
@@ -24,7 +28,7 @@ body {
 }
 
 .title:hover::after {
-    cursor: url(../assets/cursor.svg) 16 16, auto;
+    cursor: var(--cursor);
     color: var(--text);
     content: 'joshua_raffaele_baldassarre';
     font-weight: 100;
@@ -43,15 +47,16 @@ ul {
 }
 
 li {
+    color: var(--text);
     margin: 8px 0px;
 }
 
 li::marker {
-    content: url(../assets/noclicklist.svg);
+    content: var(--noclicklist);
 }
 
 .list::marker {
-    content: url(../assets/list.svg) !important;
+    content: var(--list);
 }
 
 a {
@@ -60,7 +65,7 @@ a {
 }
 
 a:hover {
-    cursor: url(../assets/cselect.svg) 16 16, auto;
+    cursor: var(--cursorhover);
     text-decoration: underline;
 }
 
@@ -68,6 +73,7 @@ button {
     font-family: 'Inconsolata', monospace;
     padding: 8px 16px;
     background-color: var(--button);
+    color: var(--text);
     border-style: solid;
     border-width: 1px;
     border-color: var(--button-outline);
@@ -75,7 +81,7 @@ button {
 }
 
 button:hover {
-    cursor: url(../assets/cselect.svg) 16 16, auto;
+    cursor: var(--cursorhover);
     text-decoration: underline;
 }
 
@@ -84,11 +90,13 @@ button:active {
 }
 
 .footer {
+    list-style: none;
+    color: var(--text);
     padding: 36px;
 }
 
 .footer::marker {
-    content: url(../assets/copyright.svg) !important;
+    content: var(--copyright);
 }
 
 @media screen and (max-aspect-ratio: 3/2) /*3:2*/ {

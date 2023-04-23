@@ -4,4 +4,10 @@
     --button: #F9F4DA;
     --button-pressed: #DBD7BE;
     --button-outline: #000;
+
+    --cursor: url(../assets/cursor.svg) 16 16, auto;
+    --cursorhover: url(../assets/cselect.svg) 16 16, auto;
+    --noclicklist: url(../assets/noclicklist.svg);
+    --list: url(../assets/list.svg) !important;
+    --copyright: url(../assets/copyright.svg) !important;
 }
