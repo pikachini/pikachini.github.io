@@ -48,6 +48,7 @@ body {
 
 ul {
     list-style: none;
+    padding: 0;
 }
 
 li {
@@ -155,10 +156,6 @@ button:active {
         justify-content: space-evenly;
     }
 
-    .title {
-        font-size: 2rem
-    }
-
     .title:hover span {
         display: none;
     }
@@ -180,6 +177,7 @@ button:active {
     ul {
         text-align: center;
         list-style: none;
+        padding: 0;
     }
 
     li::marker {
@@ -191,7 +189,6 @@ button:active {
     }
 
     li {
-        font-size: 2rem;
         margin: 64px 0px;
     }
 
@@ -199,23 +196,23 @@ button:active {
     button img {
         cursor: var(--cursorhover);
         width: 100%;
-        border-radius: 8px;
-        margin: 16px;
+        border-radius: 2px;
         border-style: solid;
-        border-width: 2px;
+        border-width: 1px;
         border-color: var(--text);
+        box-sizing: border-box;  
+        margin: 16px 8px 8px 8px;
     }
 
     button {
         padding: 32px 64px;
         width: 50vw;
-        font-size: 2rem;
-        border-radius: 24px;
-        border-width: 2px;
+        border-radius: 10px;
+        border-width: 1px;
     }
 
     .gallerybutton {
-        padding: 32px 0px 0px 0px;
+        padding: 16px 0px 0px 0px;
         width: 64vw;
     }
 
