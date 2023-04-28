@@ -114,6 +114,29 @@ li::marker {
     content: var(--list);
 }
 
+img {
+    display: block;
+}
+
+li img {
+    margin: 16px 0px;
+    z-index: 1;
+    cursor: var(--cursorhover);
+    min-width: 333px;
+    width: 20vw;
+    border-radius: 2px;
+}
+
+li img:hover {
+    z-index: 2;
+    transform: scale(1.5);
+    border-radius: 3px;
+}
+
+.image::marker {
+    content: none !important;
+}
+
 a {
     color: var(--text);
     text-decoration: none;
@@ -124,13 +147,9 @@ a:hover {
     text-decoration: underline;
 }
 
-img {
-    display: block;
-}
-
 a img {
     cursor: var(--cursorhover);
-    width: 16vw;
+    width: 20vw;
     border-radius: 2px;
     margin: 8px;
 }
@@ -232,6 +251,19 @@ button:active {
         margin: 32px 0px;
     }
 
+    li img {
+        margin: 16px 0px;
+        z-index: 1;
+        cursor: var(--cursorhover);
+        min-width: 333px;
+        width: 80vw;
+        border-radius: 2px;
+    }
+    
+    li img:hover {
+        z-index: 2;
+        transform: scale(1.1);
+    }
 
     button img {
         cursor: var(--cursorhover);
