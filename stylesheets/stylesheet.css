@@ -73,10 +73,20 @@ a:hover {
     text-decoration: underline;
 }
 
+img {
+    display: block;
+}
+
+a img {
+    cursor: var(--cursorhover);
+    width: 16vw;
+    border-radius: 2px;
+    margin: 8px;
+}
+
 .imgcontainer {
     margin: 8px 0px;
-    padding: 2px;
-    border-radius: 6px;
+    border-radius: 10px;
     border: 1px;
     border-style: solid;
     border-color: rgba(0, 0, 0, 0);
@@ -84,16 +94,15 @@ a:hover {
 
 a:hover > .imgcontainer {
     border-color: var(--button-outline);
+    background-color: var(--button);
+}
+
+a:active > .imgcontainer {
+    background-color: var(--button-pressed);
 }
 
 .imgcontainer:hover {
     border-color: var(--button-outline);
-}
-
-a img {
-    cursor: var(--cursorhover);
-    width: 16vw;
-    border-radius: 2px;
 }
 
 
@@ -105,7 +114,7 @@ button {
     border-style: solid;
     border-width: 1px;
     border-color: var(--button-outline);
-    border-radius: 2px;
+    border-radius: 10px;
 }
 
 button:hover {
@@ -191,8 +200,7 @@ button:active {
         cursor: var(--cursorhover);
         width: 100%;
         border-radius: 8px;
-        padding: 0;
-        margin: 0;
+        margin: 16px;
         border-style: solid;
         border-width: 2px;
         border-color: var(--text);
@@ -202,12 +210,12 @@ button:active {
         padding: 32px 64px;
         width: 50vw;
         font-size: 2rem;
-        border-radius: 16px;
+        border-radius: 24px;
         border-width: 2px;
     }
 
     .gallerybutton {
-        padding: 32px 12px 2px 8px;
+        padding: 32px 0px 0px 0px;
         width: 64vw;
     }
 
