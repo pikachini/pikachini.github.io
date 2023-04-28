@@ -71,7 +71,6 @@ body {
     cursor: var(--cursor);
     color: var(--text);
     content: 'joshua_raffaele_baldassarre';
-    font-weight: 100;
 }
 
 .notfound {
@@ -87,7 +86,6 @@ body {
     cursor: var(--cursor);
     color: var(--text);
     content: '404_not_found';
-    font-weight: 100;
 }
 
 #desktop {
@@ -206,16 +204,6 @@ button:active {
     body {
         height: 96vh;
         justify-content: space-evenly;
-    }
-
-    .title:hover span {
-        display: none;
-    }
-    
-    .title:hover::after {
-        cursor: url(../assets/cursor.svg) 16 16, auto;
-        content: 'joshua_raffaele_baldassarre';
-        font-weight: 100;
     }
 
     #desktop {
