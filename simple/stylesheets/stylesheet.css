@@ -9,8 +9,12 @@ body {
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
+}
+
+#scrollable {
+    height: max-content !important;
 }
 
 * {
@@ -166,6 +170,7 @@ button:active {
 
     ul {
         text-align: center;
+        list-style: none;
     }
 
     li::marker {
@@ -181,12 +186,25 @@ button:active {
         margin: 64px 0px;
     }
 
+
+    button img {
+        cursor: var(--cursorhover);
+        width: 100%;
+        border-radius: 8px;
+        padding: 0;
+        margin: 0;
+    }
+
     button {
         padding: 32px 64px;
-        min-width: 50vw;
+        width: 64vw;
         font-size: 2rem;
-        border-radius: 8px;
+        border-radius: 16px;
         border-width: 2px;
+    }
+
+    .gallerybutton {
+        padding: 32px 8px 2px 8px;
     }
 
     .footer {
