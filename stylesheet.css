@@ -31,6 +31,10 @@
     }
 }
 
+@font-face {
+    font-family: "Inconsolata";
+    src: url("assets/font/Inconsolata/inconsolata.ttf");
+    }
 
 body {
     margin: 0;
