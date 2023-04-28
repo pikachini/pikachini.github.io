@@ -34,6 +34,7 @@
 @font-face {
     font-family: "Inconsolata";
     src: url("assets/font/Inconsolata/inconsolata.ttf");
+    font-display: swap;
     }
 
 body {
@@ -70,6 +71,22 @@ body {
     cursor: var(--cursor);
     color: var(--text);
     content: 'joshua_raffaele_baldassarre';
+    font-weight: 100;
+}
+
+.notfound {
+    padding: 36px;
+    color: var(--text);
+}
+
+.notfound:hover span {
+    display: none;
+}
+
+.notfound:hover::after {
+    cursor: var(--cursor);
+    color: var(--text);
+    content: '404_not_found';
     font-weight: 100;
 }
 
