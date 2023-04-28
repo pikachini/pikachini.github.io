@@ -1,0 +1,230 @@
+@import url('light.css') screen and (prefers-color-scheme: light);
+@import url('dark.css') screen and (prefers-color-scheme: dark);
+
+body {
+    margin: 0;
+    background-color: var(--background);
+    font-family: 'Inconsolata', monospace;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+#scrollable {
+    height: max-content !important;
+}
+
+* {
+    cursor: var(--cursor);
+    shape-rendering: crispEdges;
+}
+
+.title {
+    padding: 36px;
+    color: var(--text);
+}
+
+.title:hover span {
+    display: none;
+}
+
+.title:hover::after {
+    cursor: var(--cursor);
+    color: var(--text);
+    content: 'joshua_raffaele_baldassarre';
+    font-weight: 100;
+}
+
+#desktop {
+    display: inline-block;
+}
+
+#mobile {
+    display: none;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    color: var(--text);
+    margin: 8px 0px;
+}
+
+li::marker {
+    content: var(--noclicklist);
+}
+
+.list::marker {
+    content: var(--list);
+}
+
+a {
+    color: var(--text);
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: var(--cursorhover);
+    text-decoration: underline;
+}
+
+img {
+    display: block;
+}
+
+a img {
+    cursor: var(--cursorhover);
+    width: 16vw;
+    border-radius: 2px;
+    margin: 8px;
+}
+
+.imgcontainer {
+    margin: 8px 0px;
+    border-radius: 10px;
+    border: 1px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0);
+}
+
+a:hover > .imgcontainer {
+    border-color: var(--button-outline);
+    background-color: var(--button);
+}
+
+a:active > .imgcontainer {
+    background-color: var(--button-pressed);
+}
+
+.imgcontainer:hover {
+    border-color: var(--button-outline);
+}
+
+
+button {
+    font-family: 'Inconsolata', monospace;
+    padding: 8px 16px;
+    background-color: var(--button);
+    color: var(--text);
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--button-outline);
+    border-radius: 10px;
+}
+
+button:hover {
+    cursor: var(--cursorhover);
+    text-decoration: underline;
+}
+
+button:active {
+    background-color: var(--button-pressed);
+}
+
+.footer {
+    list-style: none;
+    color: var(--text);
+    padding: 36px;
+}
+
+.footer::marker {
+    content: var(--copyright);
+}
+
+@media screen and (max-aspect-ratio: 3/2) /*3:2*/ {
+
+}
+
+@media screen and (max-aspect-ratio: 1/1) /*box*/ {
+
+}
+
+@media screen and (max-aspect-ratio: 9/15) /*portrait*/ {
+
+}
+
+@media only screen  and (max-device-width: 1000px) and (orientation: portrait) {
+
+    body {
+        height: 96vh;
+        justify-content: space-evenly;
+    }
+
+    .title {
+        font-size: 2rem
+    }
+
+    .title:hover span {
+        display: none;
+    }
+    
+    .title:hover::after {
+        cursor: url(../assets/cursor.svg) 16 16, auto;
+        content: 'joshua_raffaele_baldassarre';
+        font-weight: 100;
+    }
+
+    #desktop {
+        display: none;
+    }
+
+    #mobile {
+        display: inline;
+    }
+
+    ul {
+        text-align: center;
+        list-style: none;
+    }
+
+    li::marker {
+        content: none;
+    }
+
+    .list::marker {
+        content: none !important;
+    }
+
+    li {
+        font-size: 2rem;
+        margin: 64px 0px;
+    }
+
+
+    button img {
+        cursor: var(--cursorhover);
+        width: 100%;
+        border-radius: 8px;
+        margin: 16px;
+        border-style: solid;
+        border-width: 2px;
+        border-color: var(--text);
+    }
+
+    button {
+        padding: 32px 64px;
+        width: 50vw;
+        font-size: 2rem;
+        border-radius: 24px;
+        border-width: 2px;
+    }
+
+    .gallerybutton {
+        padding: 32px 0px 0px 0px;
+        width: 64vw;
+    }
+
+    .footer {
+        font-size: 1rem;
+    }
+
+} /* styles for smartphones and tablets in portrait mode */
+
+@media only screen  and (max-device-width: 1000px) and (orientation: landscape) {
+
+} /* styles for smartphones and tablets in landscape mode */
