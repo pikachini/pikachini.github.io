@@ -9,6 +9,7 @@
     
         --cursor: url(assets/cursor.svg) 16 16, auto;
         --cursorhover: url(assets/cselect.svg) 16 16, auto;
+        --inspect: url(assets/cinspect.svg) 16 16, auto;
         --noclicklist: url(assets/noclicklist.svg);
         --list: url(assets/list.svg) !important;
         --copyright: url(assets/copyright.svg) !important;
@@ -25,17 +26,12 @@
     
         --cursor: url(assets/cursordark.svg) 16 16, auto;
         --cursorhover: url(assets/cselectdark.svg) 16 16, auto;
+        --inspect: url(assets/cinspectdark.svg) 16 16, auto;
         --noclicklist: url(assets/noclicklistdark.svg);
         --list: url(assets/listdark.svg) !important;
         --copyright: url(assets/copyrightdark.svg) !important;
     }
 }
-
-@font-face {
-    font-family: "Inconsolata";
-    src: url("assets/font/Inconsolata/inconsolata.ttf");
-    font-display: swap;
-    }
 
 body {
     margin: 0;
@@ -58,6 +54,10 @@ body {
     shape-rendering: crispEdges;
 }
 
+a:hover{
+    cursor: var(--cursorhover) !important;
+}
+
 .title {
     padding: 36px;
     color: var(--text);
@@ -68,7 +68,7 @@ body {
 }
 
 .title:hover::after {
-    cursor: var(--cursor);
+    cursor: var(--cursorhover);
     color: var(--text);
     content: 'joshua_raffaele_baldassarre';
 }
@@ -110,6 +110,10 @@ li::marker {
     content: var(--noclicklist);
 }
 
+.list {
+    cursor: var(--cursorhover) !important;
+}
+
 .list::marker {
     content: var(--list);
 }
@@ -118,19 +122,13 @@ img {
     display: block;
 }
 
-li img {
+.image img {
     margin: 16px 0px;
     z-index: 1;
     cursor: var(--cursorhover);
     min-width: 333px;
     width: 20vw;
     border-radius: 2px;
-}
-
-li img:hover {
-    z-index: 2;
-    transform: scale(1.5);
-    border-radius: 3px;
 }
 
 .image::marker {
@@ -152,6 +150,10 @@ a img {
     width: 20vw;
     border-radius: 2px;
     margin: 8px;
+}
+
+.list img:hover {
+    cursor: var(--inspect);
 }
 
 .imgcontainer {
@@ -181,9 +183,7 @@ button {
     padding: 8px 16px;
     background-color: var(--button);
     color: var(--text);
-    border-style: solid;
-    border-width: 1px;
-    border-color: var(--button-outline);
+    border-style: none;
     border-radius: 10px;
 }
 
@@ -223,6 +223,7 @@ button:active {
     body {
         height: 96vh;
         justify-content: space-evenly;
+        width: 100vw;
     }
 
     #desktop {
@@ -236,7 +237,7 @@ button:active {
     ul {
         text-align: center;
         list-style: none;
-        padding: 0;
+        padding: 0px 24px;
     }
 
     li::marker {
@@ -255,9 +256,9 @@ button:active {
         margin: 16px 0px;
         z-index: 1;
         cursor: var(--cursorhover);
-        min-width: 333px;
-        width: 80vw;
-        border-radius: 2px;
+        min-width: 72vw;
+        width: 72vw;
+        border-radius: 10px;
     }
     
     li img:hover {
@@ -268,24 +269,23 @@ button:active {
     button img {
         cursor: var(--cursorhover);
         width: 100%;
-        border-radius: 2px;
-        border-style: solid;
-        border-width: 1px;
-        border-color: var(--text);
+        border-radius: 10px;
         box-sizing: border-box;  
-        margin: 16px 8px 8px 8px;
+        margin: 16px 0px 0px 0px;
+        transform: scale(1.05) translateY(5px);
+        transition: all ease-out 0.1s;
     }
 
     button {
         padding: 18px 32px;
-        width: 50vw;
+        width: 100%;
         border-radius: 10px;
         border-width: 1px;
     }
 
     .gallerybutton {
         padding: 16px 0px 0px 0px;
-        width: 64vw;
+        width: 100%;
     }
 
     .footer {
