@@ -1,28 +1,9 @@
-
-@media (prefers-color-scheme: light) {
-    :root {
-        --text: #000;
-        --background:#FFFCEA;
-        --button: #F9F4DA;
-        --button-pressed: #e7e3c9;
-        --button-outline: #000;
-    
-        --cursor: url(assets/cursor.svg) 16 16, auto;
-        --cursorhover: url(assets/cselect.svg) 16 16, auto;
-        --inspect: url(assets/cinspect.svg) 16 16, auto;
-        --noclicklist: url(assets/noclicklist.svg);
-        --list: url(assets/list.svg) !important;
-        --copyright: url(assets/copyright.svg) !important;
-    }
-}
-
-@media (prefers-color-scheme: dark) {
-    :root {
-        --text: #FFFCEA;
+:root {
+        --text: #fff;
         --background:#000;
-        --button: #1f1e1d;
-        --button-pressed: #272625;
-        --button-outline: #FFFCEA;
+        --button: #381524;
+        --button-pressed: #441c2d;
+        --button-outline: #fff;
     
         --cursor: url(assets/cursordark.svg) 16 16, auto;
         --cursorhover: url(assets/cselectdark.svg) 16 16, auto;
@@ -30,12 +11,15 @@
         --noclicklist: url(assets/noclicklistdark.svg);
         --list: url(assets/listdark.svg) !important;
         --copyright: url(assets/copyrightdark.svg) !important;
-    }
 }
 
 body {
     margin: 0;
     background-color: var(--background);
+    background-image: url(assets/background.png);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center center;
     font-family: 'Inconsolata', monospace;
     display: flex;
     justify-content: space-between;
