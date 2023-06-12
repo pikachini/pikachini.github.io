@@ -13,6 +13,8 @@
         --copyright: url(assets/copyrightdark.svg) !important;
 }
 
+@font-face {font-family: "Inconsolata"; src: url("assets/font/Inconsolata/inconsolata.ttf"); font-display: swap;}
+
 body {
     margin: 0;
     background-color: var(--background);
