@@ -2,6 +2,8 @@
         --text: #fff;
         --background:#000;
         --button: #381524;
+        --buttonanim: linear-gradient(90deg,#000, #000, #18050d, #000, #18050d, #18050d);
+        --buttonanim-pressed: linear-gradient(90deg,#381524, #381524, #5a1130, #381524, #5a1130, #5a1130);
         --button-pressed: #441c2d;
         --button-outline: #fff;
     
@@ -168,18 +170,52 @@ button {
     font-family: 'Inconsolata', monospace;
     padding: 8px 16px;
     background-color: var(--button);
+    background: var(--buttonanim);
+    background-size: 1000%;
+    animation: anime 16s linear infinite;
     color: var(--text);
     border-style: none;
     border-radius: 10px;
+    box-shadow: #5a1130 0px 0px 72px;
+    transition: 100ms ease-in-out;
+}
+
+@keyframes anime {
+0% {
+  background-position: 0% 50%;
+  box-shadow: rgba(90, 17, 48, 1) 0px 0px 72px;
+}
+25% {
+    box-shadow: rgba(90, 17, 48, 0.42) 0px 0px 72px;
+}
+50% {
+  background-position: 100% 50%;
+  box-shadow: rgba(90, 17, 48, 1) 0px 0px 72px;
+}
+75% {
+    box-shadow: rgba(90, 17, 48, 0.42) 0px 0px 72px;
+}
+100% {
+  background-position: 0% 50%;
+  box-shadow: rgba(90, 17, 48, 1) 0px 0px 72px;
+}
 }
 
 button:hover {
     cursor: var(--cursorhover);
     text-decoration: underline;
+    box-shadow: #5a1130 0px 0px 56px !important;
+    background: var(--buttonanim-pressed);
+    background-size: 1000%;
+    animation: anime 16s linear infinite;
 }
 
 button:active {
+    box-shadow: #5a1130 0px 0px 32px !important;
     background-color: var(--button-pressed);
+    background: var(--buttonanim-pressed);
+    background-size: 1000%;
+    animation: anime 16s linear infinite;
 }
 
 .footer {
